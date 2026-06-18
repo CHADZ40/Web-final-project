@@ -1,0 +1,92 @@
+@import url(header.css);
+@import url(footer.css);
+
+main{
+  background-image: url(https://cdn.pandaw.com//images/blog/blog_80_header.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.white-background{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 40vw;
+  height: 83vh;
+  margin: 0 80px;
+  line-height: 20px;
+  color: white;
+}
+.text h2{
+  font-size: 50px;
+}
+.text a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+.text a:hover{
+  background-color: rgb(209, 209, 209);
+  color: rgb(226, 20, 54);
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 100px;
+  height: fit-content;
+  background-color: blanchedalmond;
+}
+.parent a:hover{
+  transform: scale(1.01);
+}
+.child{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  background-color: #A1BC98;
+  color: black;
+  border-radius: 30px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.child:nth-child(even){
+  display: flex;
+  flex-direction: row-reverse;
+}
+.child img{
+  width: 1000px;
+  height: 180px;
+  object-fit: cover;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 30px;
+}
+.article h2{
+  font-size: 10px;
+  background-color: #313a2f;
+  color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.article h3{
+  font-size: 25px;
+}
+
