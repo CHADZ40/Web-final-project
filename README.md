@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./assets/photos/logo.PNG" alt="Project logo" style="width: 70%">
+    <img src="../src/assets/image/logo.PNG" alt="Project logo" style="width: 70%">
     <h1>Web Development I Final-Project</h1>
 </div>
 
