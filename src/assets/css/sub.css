@@ -1,18 +1,18 @@
 @import url(header.css);
 @import url(footer.css);
 
-.img-wrapper img{
+.img-wrapper img {
   width: 100%;
   height: 50vh;
   object-fit: cover;
   display: block;
 }
-.img-wrapper{
+.img-wrapper {
   position: relative;
   display: inline-block;
   width: 100%;
 }
-.img-wrapper::after{
+.img-wrapper::after {
   content: "";
   position: absolute;
   top: 0;
@@ -21,13 +21,13 @@
   height: 100%;
   background: linear-gradient(to top, rgba(255, 255, 255, 1), transparent);
 }
-article{
+article {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 10px 30px;
 }
-.parent{
+.parent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,7 +37,7 @@ article{
   border-radius: 50px;
   height: fit-content;
 }
-.feedback{
+.feedback {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -49,16 +49,16 @@ article{
   padding-bottom: 15px;
   height: 100%;
 }
-.feedback img{
+.feedback img {
   width: 250px;
   height: 200px;
 }
-.feedback p{
+.feedback p {
   padding: 10px 15px;
   color: white;
   line-height: 20px;
 }
-.star{
+.star {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -66,4 +66,3 @@ article{
   color: gold;
   gap: 5px;
 }
-
