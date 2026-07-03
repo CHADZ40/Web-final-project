@@ -7,3 +7,172 @@ Body Font: Noto Sans or Noto Sans khmer */
 Heading Font: Montserrat (used in bold or all-caps)
 Body Font: Lato or noto sans */
 
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/cinzel-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/noto-sans-v42-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-khmer-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Khmer';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/noto-sans-khmer-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font-types/montserrat-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/lato-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Domaine Display Narrow - local font files */
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/DomaineDispNar-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../font-types/DomaineDispNar-RegularItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font-types/DomaineDispNar-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../font-types/DomaineDispNar-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../font-types/DomaineDispNar-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../font-types/DomaineDispNar-SemiboldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font-types/DomaineDispNar-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../font-types/DomaineDispNar-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../font-types/DomaineDispNar-Extrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../font-types/DomaineDispNar-ExtraboldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font-types/DomaineDispNar-Black.otf') format('opentype');
+}
+
+/* can be use for header and short description on the first page */
+@font-face {
+  font-family: 'Domaine Display Narrow';
+  src: url('../font-types/DomaineDispNar-Regular.woff2') format('woff2'),
+       url('../font-types/DomaineDispNar-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SilkSerif for simple headline and description if the other fonts look redundant*/
+@font-face {
+  font-display: swap;
+  font-family: 'SilkSerif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/SilkSerif-TRIAL-Light-BF6740066e4d5cb.ttf') format('truetype');
+}
+
+/* angkor-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Angkor';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/angkor-v35-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
