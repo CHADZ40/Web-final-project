@@ -2,7 +2,7 @@
 @import url(footer.css);
 
 main{
-  background-image: url(https://sacredsites.com/images/asia/cambodia/Angkor-Wat-sunrise.webp);
+  background-image: url(/assets/image/angkor.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,0 +1,206 @@
+ /* for tablet */
+@media (max-width: 1024px) {
+
+  .article {
+    max-width: 85vw;
+  }
+
+  .food img,
+  .culture-wrapper video {
+    width: 45vw;
+    height: 30vh;
+  }
+
+  .review-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap,
+  .wrap-review {
+    max-width: 90vw;
+  }
+}
+
+
+
+   /* SMALL TABLET / LARGE PHONE (768px and below) */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-pic {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+
+  .link {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 20px auto;
+    gap: 15px;
+  }
+
+  .article {
+    max-width: 90vw;
+    padding: 15px;
+  }
+
+  .des-title {
+    font-size: 28px;
+  }
+
+  .google-map {
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  .destination-link {
+    padding: 15px 40px;
+  }
+
+  .food,
+  .culture {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food img,
+  .culture-wrapper video {
+    width: 90vw;
+    height: 220px;
+  }
+
+  .food-article,
+  .culture-article {
+    align-items: center;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  .wrap table tr {
+    margin-bottom: 15px;
+    border: 1px solid #d9d9f0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .wrap table td {
+    border-bottom: none;
+    padding: 10px 15px;
+  }
+
+  .time {
+    width: auto;
+    background: #14146b;
+    color: white;
+  }
+
+  .review-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .score {
+    font-size: 32px;
+  }
+}
+
+
+
+   /* MOBILE PHONE (480px and below) */
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .main-pic {
+    height: 220px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .link {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .link li {
+    font-size: 14px;
+  }
+
+  .article {
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .des-title {
+    font-size: 22px;
+  }
+
+  .food-article h3,
+  .culture-article h3 {
+    font-size: 22px;
+  }
+
+  .food-article p,
+  .culture-article p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .food img,
+  .culture-wrapper video {
+    height: 180px;
+  }
+
+  .wrap h1,
+  .wrap-review h1 {
+    font-size: 24px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .rating-line {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+}
