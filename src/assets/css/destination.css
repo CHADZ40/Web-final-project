@@ -107,3 +107,158 @@ body{
   padding: 20px 80px;
   border-radius: 30px;
 }
+
+@media (max-width: 1024px) {
+  .title-text{
+    max-width: 60vw;
+  }
+
+  .container{
+    padding: 30px 40px;
+    gap: 40px;
+  }
+
+  .child{
+    gap: 20px;
+  }
+
+  .child img{
+    width: 320px;
+    height: 240px;
+  }
+
+  .article{
+    max-width: 60vw;
+  }
+
+  .destination-link{
+    padding: 18px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-wrapper{
+    padding: 20px 25px;
+  }
+
+  .title-header{
+    font-size: 30px;
+  }
+
+  .title-text{
+    max-width: 100%;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+
+  .container{
+    padding: 20px 25px;
+    gap: 35px;
+  }
+
+  /* Stack image + article vertically, and cancel the reversed order */
+  .child,
+  .child-wrapper:nth-child(even) .child{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .child img{
+    width: 100%;
+    max-width: 500px;
+    height: 260px;
+    border-radius: 25px;
+  }
+
+  .article{
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .article a{
+    align-self: center;
+  }
+
+  .google-map{
+    height: 300px;
+    border-radius: 25px;
+  }
+
+  .destination-link{
+    padding: 16px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1{
+    font-size: 15px;
+  }
+  header{
+    padding: 5px 25px;
+  }
+  nav ul{
+    gap: 35px;
+  }
+  nav li a{
+    font-size: 10px;
+  }
+  .title-header{
+    font-size: 24px;
+  }
+
+  .title-wrapper{
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .container{
+    padding: 15px 15px;
+    gap: 35px;
+  }
+
+  .child img{
+    height: 200px;
+    border-radius: 18px;
+    border-width: 3px;
+  }
+  .child{
+    gap: 30px;
+  }
+
+  .article{
+    gap: 10px;
+  }
+
+  .article-loca{
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+
+  .article a{
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .destination{
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+
+  .google-map{
+    height: 220px;
+    border-radius: 15px;
+  }
+
+  .destination-link{
+    padding: 14px 30px;
+    width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
