@@ -5,70 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Which direction?</title>
+  <link rel="stylesheet" href="/assets/css/guide.css">
   <link rel="Icon" href="/assets/image/logo.ico">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 48px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .card {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-    }
-
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-label {
-      padding: 14px 16px;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .card {
-        transition: none;
-      }
-    }
-  </style>
 </head>
 
 <body>
