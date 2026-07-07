@@ -1,0 +1,147 @@
+@media (max-width: 1024px) {
+
+  .text{
+    height: auto;
+    padding: 80px 30px;
+    gap: 25px;
+  }
+  .text h2{
+    font-size: 38px;
+  }
+  .text p{
+    max-width: 600px;
+    font-size: 15px;
+  }
+
+  .welcome-wrapper{
+    padding: 30px;
+    gap: 30px;
+  }
+  .welcome{
+    max-width: 55vw;
+    padding: 30px;
+  }
+  .welcome-header{
+    font-size: 36px;
+  }
+  .welcome-text{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .welcome-vid-wrapper{
+    width: 40vw;
+  }
+
+  .parent-wrapper{
+    padding: 30px 40px;
+  }
+  .parent-title{
+    font-size: 26px;
+    padding: 35px 0;
+  }
+  .parent{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .child:nth-child(4){
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  header h1{
+    font-size: 15px;
+  }
+  header{
+    padding: 5px 25px;
+  }
+  nav ul{
+    gap: 35px;
+  }
+  nav li a{
+    font-size: 10px;
+  }
+   main{
+    height: 95vh;
+   }
+  .text{
+    height: 95vh;
+    padding: 60px 20px;
+    gap: 18px;
+  }
+  .text h2{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .text p{
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .welcome-wrapper{
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .welcome{
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .welcome-header{
+    font-size: 28px;
+  }
+  .welcome-text{
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+  }
+  .welcome-vid-wrapper{
+    width: 100%;
+  }
+  .video{
+    max-width: 100%;
+  }
+  .video-link{
+    width: 100%;
+    max-width: 200px;
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .parent-wrapper{
+    padding: 30px 20px;
+  }
+  .parent-title{
+    font-size: 22px;
+    padding: 25px 0;
+    text-align: center;
+  }
+  .parent{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .child:nth-child(4){
+    grid-column: span 1;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .child img{
+    height: 180px;
+  }
+
+  .article{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .article h3{
+    font-size: 20px;
+  }
+  .article p{
+    font-size: 14px;
+  }
+}

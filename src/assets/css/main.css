@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(footer.css);
 
+
 main{
   background-image: url(/assets/image/angkor.jpg);
   background-position: center;
