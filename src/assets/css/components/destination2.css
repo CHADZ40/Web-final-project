@@ -22,4 +22,10 @@
   background-color: navy;
   padding: 20px 80px;
   border-radius: 30px;
+  font-weight: 800;
+}
+
+.destination-link:active{
+  background-color: rgb(1, 1, 73);
+  color: grey;
 }
