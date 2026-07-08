@@ -33,8 +33,8 @@
   flex-direction: row-reverse;
 }
 .food img{
-  width: 35vw;
-  height: 30vh;
+  width: 30vw;
+  height: 45vh;
   object-fit: cover;
   flex-shrink: 0;
   border: 1px solid navy;
@@ -56,9 +56,10 @@
 }
 .food-article p, .culture-article p{
   line-height: 25px;
+  font-size: 18px;
 }
 .food-article h3, .culture-article h3{
-  font-size: 30px;
+  font-size: 35px;
 }
 .culture-wrapper video{
   width: 35vw;
@@ -68,11 +69,34 @@
   border: 1px solid white;
   padding: 5px;
 }
+
 .culture-wrapper img{
-  width: 45vw;
-  height: 30vh;
+  width: 35vw;
   object-fit: cover;
   flex-shrink: 0;
-  border: 1px solid white;
+  border: 1px solid navy;
   padding: 5px;
+}
+
+/*Make the image here responsive to the device because it look good on PC but on mobile phone it look small*/
+@media screen and (max-width: 600px) {
+
+  .culture-wrapper img{
+    width: 80vw;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid navy;
+    padding: 5px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .culture-wrapper img{
+    width: 45vw;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid navy;
+    padding: 2px;
+  }
 }
