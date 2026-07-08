@@ -1,3 +1,4 @@
+@import url(font.css);
 @import url(header.css);
 @import url(footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Black+Ops+One&family=Fjalla+One&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Luckiest+Guy&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -142,6 +143,9 @@ main{
   width: fit-content;
   padding: 5px 10px;
   border-radius: 10px;
+  font-family: "Montserrat", "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 .article h3{
   font-size: 25px;

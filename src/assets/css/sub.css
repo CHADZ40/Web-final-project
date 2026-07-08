@@ -1,3 +1,4 @@
+@import url(font.css);
 @import url(header.css);
 @import url(footer.css);
 @import url(components/welcome.css);
@@ -6,3 +7,26 @@
 @import url(components/travel_tips_2.css);
 @import url(components/review.css);
 @import url(components/responsive.css);
+
+body{
+  font-family: "Noto Sans", "Noto Sans Khmer", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Cinzel", "Playfair Display", "Domaine Display Narrow", "SilkSerif", serif;
+  font-weight: 700;
+}
+
+.title-header{
+  font-family: "Playfair Display", "Cinzel", serif;
+}
+
+.article h3{
+  font-family: "Domaine Display Narrow", "SilkSerif", serif;
+}
+
+.article-loca{
+  font-family: "Montserrat", "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
