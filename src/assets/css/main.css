@@ -1,6 +1,20 @@
+@import url(font.css);
 @import url(header.css);
 @import url(footer.css);
 
+:root{
+  --heading-font: "Cinzel", "Playfair Display", "Domaine Display Narrow", serif;
+  --body-font: "Noto Sans", "Noto Sans Khmer", sans-serif;
+}
+
+body{
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
 
 main{
   background-image: url(/assets/image/angkor.jpg);
@@ -25,6 +39,7 @@ main{
 }
 .text h2{
   font-size: 50px;
+  font-family: "Playfair Display", "Cinzel", serif;
 }
 .text p{
   max-width: 800px;
@@ -51,6 +66,7 @@ main{
 }
 .welcome-header{
   font-size: 50px;
+  font-family: "Cinzel", "Playfair Display", serif;
 }
 .welcome-vid-wrapper{
   display: flex;
@@ -90,6 +106,7 @@ main{
   font-size: 30px;
   color: black;
   padding: 50px 0;
+  font-family: "Cinzel", "Playfair Display", serif;
 }
 .parent{
   display: grid;
@@ -137,9 +154,13 @@ main{
   width: fit-content;
   padding: 5px 10px;
   border-radius: 10px;
+  font-family: "Montserrat", "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 .article h3{
   font-size: 25px;
+  font-family: "Playfair Display", "Cinzel", serif;
 }
 .article p{
   font-size: 15px;

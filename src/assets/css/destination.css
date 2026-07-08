@@ -1,8 +1,15 @@
+@import url(font.css);
 @import url(header.css);
 @import url(footer.css);
 
 body{
   background-color: #E8EDF2;
+  font-family: "Noto Sans", "Noto Sans Khmer", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Cinzel", "Playfair Display", "Domaine Display Narrow", "SilkSerif", serif;
+  font-weight: 700;
 }
 
 .title-wrapper{
@@ -15,6 +22,7 @@ body{
 }
 .title-header{
   font-size: 40px;
+  font-family: "Playfair Display", "Cinzel", serif;
 }
 .title-text{
   max-width: 40vw;
