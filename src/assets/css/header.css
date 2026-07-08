@@ -9,18 +9,18 @@ body{
 header{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   background-color: antiquewhite;
   width: 100%;
-  padding: 20px 60px;
+  padding: 20px 20px;
+  gap: 20px;
 }
 header h1{
   font-size: 24px;
   cursor: pointer;
 }
 header img{
-  width: 50px;
+  width: 80px;
 }
 nav{
   position: sticky;
