@@ -1,6 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Black+Ops+One&family=Fjalla+One&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Luckiest+Guy&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 main{
   background-image: url(/assets/image/angkor.jpg);
@@ -25,9 +25,11 @@ main{
 }
 .text h2{
   font-size: 50px;
+  font-family: "Black Ops One", system-ui;
 }
 .text p{
   max-width: 800px;
+  font-family: "Josefin Slab", serif;
 }
 .welcome-wrapper{
   display: flex;
@@ -48,9 +50,11 @@ main{
 .welcome-text{
   font-size: 15px;
   line-height: 25px;
+  font-family: "Josefin Slab", serif;
 }
 .welcome-header{
   font-size: 50px;
+  font-family: "Monoton", sans-serif;
 }
 .welcome-vid-wrapper{
   display: flex;
@@ -90,6 +94,7 @@ main{
   font-size: 30px;
   color: black;
   padding: 50px 0;
+  font-family: "Fjalla One", sans-serif;
 }
 .parent{
   display: grid;
@@ -140,9 +145,12 @@ main{
 }
 .article h3{
   font-size: 25px;
+  font-family: "Luckiest Guy", cursive;
+  color: black;
 }
 .article p{
   font-size: 15px;
   line-height: 20px;
+  font-family: "Josefin Slab", serif;
 }
 
