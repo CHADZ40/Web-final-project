@@ -1,0 +1,1547 @@
+/* Consolidated site stylesheet */
+
+/* font.css */
+/* Ancient Temple & Cultural Heritage Site like Angkor Wat, Oudong Mountain should use
+Cinzel, Noto sans khmer, Noto sans, playfair display fonts
+Heading Font: Cinzel or Playfair Display
+Body Font: Noto Sans or Noto Sans khmer */
+
+/* Modern Tropical & beach vibe like Koh Rong and Phnom Penh should use font like
+Heading Font: Montserrat (used in bold or all-caps)
+Body Font: Lato or noto sans */
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/cinzel-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/noto-sans-v42-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-khmer-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans Khmer';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/noto-sans-khmer-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font-types/montserrat-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/lato-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Domaine Display Narrow - local font files */
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/DomaineDispNar-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../font-types/DomaineDispNar-RegularItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font-types/DomaineDispNar-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../font-types/DomaineDispNar-MediumItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../font-types/DomaineDispNar-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../font-types/DomaineDispNar-SemiboldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font-types/DomaineDispNar-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../font-types/DomaineDispNar-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../font-types/DomaineDispNar-Extrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../font-types/DomaineDispNar-ExtraboldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Domaine Display Narrow';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font-types/DomaineDispNar-Black.otf') format('opentype');
+}
+
+/* can be use for header and short description on the first page */
+@font-face {
+  font-family: 'Domaine Display Narrow';
+  src: url('../font-types/DomaineDispNar-Regular.woff2') format('woff2'),
+       url('../font-types/DomaineDispNar-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SilkSerif for simple headline and description if the other fonts look redundant*/
+@font-face {
+  font-display: swap;
+  font-family: 'SilkSerif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/SilkSerif-TRIAL-Light-BF6740066e4d5cb.ttf') format('truetype');
+}
+
+/* angkor-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Angkor';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font-types/angkor-v35-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* header.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 20px 20px;
+  gap: 20px;
+}
+header h1{
+  font-size: 24px;
+  cursor: pointer;
+}
+header img{
+  width: 80px;
+}
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 120px;
+  background-color: darkblue;
+  padding: 20px;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+nav li a:hover{
+  text-decoration: underline;
+}
+
+/* footer.css */
+footer{
+  background-color: #313a2f;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-style: italic;
+  text-align: center;
+  font-family:  "Noto Sans", "Lato", sans-serif;
+}
+
+/* main.css */
+:root{
+  --heading-font: "Cinzel", "Playfair Display", "Domaine Display Narrow", serif;
+  --body-font: "Noto Sans", "Lato", sans-serif;
+}
+
+body{
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+main{
+  background-image: url(/assets/image/angkor.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.transparency{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100vw;
+  height: 83vh;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+.text h2{
+  font-size: 50px;
+}
+.text p{
+  max-width: 800px;
+}
+.welcome-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: fit-content;
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 50vw;
+  padding: 60px;
+}
+.welcome-text{
+  font-size: 15px;
+  line-height: 25px;
+}
+.welcome-header{
+  font-size: 50px;
+}
+.welcome-vid-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  gap: 20px;
+}
+.video{
+  width: 100%;
+  max-width: 540px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: block;
+  object-fit: contain;
+}
+.video-link{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 40px;border: 1px solid rgb(255, 255, 255);
+}
+.video-link:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.parent-wrapper{
+  height: fit-content;
+  background-color: blanchedalmond;
+  padding: 40px 100px;
+}
+.parent-title{
+  font-size: 30px;
+  color: black;
+  padding: 50px 0;
+}
+.parent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.parent a:hover{
+  transform: scale(1.01);
+}
+.child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #A1BC98;
+  color: black;
+  border-radius: 30px;
+  overflow: hidden;
+  text-decoration: none;
+  height: fit-content;
+}
+.child:nth-child(4){
+  grid-column: span 3;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.child img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 30px;
+}
+.article h2{
+  font-size: 10px;
+  background-color: #313a2f;
+  color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.article h3{
+  font-size: 25px;
+}
+.article p{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* main_responsive.css */
+@media (max-width: 1024px) {
+
+  .text{
+    height: auto;
+    padding: 80px 30px;
+    gap: 25px;
+  }
+  .text h2{
+    font-size: 38px;
+  }
+  .text p{
+    max-width: 600px;
+    font-size: 15px;
+  }
+
+  .welcome-wrapper{
+    padding: 30px;
+    gap: 30px;
+  }
+  .welcome{
+    max-width: 55vw;
+    padding: 30px;
+  }
+  .welcome-header{
+    font-size: 36px;
+  }
+  .welcome-text{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .welcome-vid-wrapper{
+    width: 40vw;
+  }
+
+  .parent-wrapper{
+    padding: 30px 40px;
+  }
+  .parent-title{
+    font-size: 26px;
+    padding: 35px 0;
+  }
+  .parent{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .child:nth-child(4){
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  header h1{
+    font-size: 15px;
+  }
+  header{
+    padding: 5px 25px;
+  }
+  nav ul{
+    gap: 35px;
+  }
+  nav li a{
+    font-size: 8px;
+    font-weight: bold
+  }
+  main{
+    height: 95vh;
+  }
+  .text{
+    height: 95vh;
+    padding: 60px 20px;
+    gap: 18px;
+  }
+  .text h2{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .text p{
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 22px;
+    font-size: 10px;
+  }
+
+  .welcome-wrapper{
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .welcome{
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .welcome-header{
+    font-size: 20px;
+  }
+  .welcome-text{
+    font-size: 12px;
+    text-align: left;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .welcome-vid-wrapper{
+    width: 100%;
+  }
+  .video{
+    max-width: 100%;
+  }
+  .video-link{
+    width: 100%;
+    max-width: 200px;
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .parent-wrapper{
+    padding: 30px 20px;
+  }
+  .parent-title{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .parent{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .child:nth-child(4){
+    grid-column: span 1;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .child img{
+    height: 180px;
+  }
+
+  .article{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .article h3{
+    font-size: 20px;
+  }
+  .article p{
+    font-size: 12px;
+  }
+}
+
+/* contact.css */
+header h1{
+  color: black;
+}
+
+body{
+  background-color: #0A2947;
+  color: #F3E4C9;
+}
+main{
+  padding: 60px 120px;
+  margin-bottom: 80px;
+}
+main h1{
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #F3E4C9;
+  padding-bottom: 10px;
+}
+main p{
+  max-width: 40vw;
+  line-height: 20px;
+}
+.card-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #0A2947;
+  gap: 30px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #F3E4C9;
+  padding: 50px;
+  height: 180px;
+  gap: 20px;
+  max-width: 500px;
+  cursor: pointer;
+}
+.card:hover{
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 80px 120px;
+  padding: 20px 30px;
+  border: 2px solid #F3E4C9;
+  border-radius: 10px;
+  height: max-content;
+  gap: 20px;
+  padding-top: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  background-color: #F3E4C9;
+  color: #0A2947;
+}
+label{
+  font-size: 20px;
+}
+input, textarea{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #0A2947;
+  background-color: #f7f1e6;
+}
+textarea{
+  height: 130px;
+}
+button{
+  background-color: #0A2947;
+  color: #F3E4C9;
+  width: fit-content;
+  padding: 10px 25px;
+  font-size: 15px;
+  margin: 0;
+  border: 1px solid #0A2947;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.reset{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #57421b;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+@media (max-width: 768px){
+  main{
+    padding: 40px 30px;
+    margin-bottom: 50px;
+  }
+  main h1{
+    font-size: 32px;
+  }
+  main p{
+    max-width: 90vw;
+  }
+  .card-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  form{
+    margin: 40px auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px){
+  header h1{
+    font-size: 15px;
+  }
+  header{
+    padding: 5px 25px;
+  }
+  nav ul{
+    gap: 35px;
+  }
+  nav li a{
+    font-size: 10px;
+  }
+   main{
+    padding: 30px 20px;
+  }
+  main h1{
+    font-size: 26px;
+  }
+  main p{
+    max-width: 100%;
+    line-height: 22px;
+  }
+  .card-wrapper{
+    padding: 0 15px;
+  }
+  .card{
+    padding: 20px;
+    height: 150px;
+    margin: 0 10px;
+  }
+  .form-wrapper{
+    padding: 0 15px;
+    margin-top: 130px;
+  }
+  form{
+    margin: 30px auto;
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+  button{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* destination.css */
+body{
+  background-color: #E8EDF2;
+  font-family: "Noto Sans", "Noto Sans Khmer", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Cinzel", "Playfair Display", "Domaine Display Narrow", "SilkSerif", serif;
+  font-weight: 700;
+}
+
+.title-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 40px;
+  color: #170C79;
+}
+.title-header{
+  font-size: 40px;
+  font-family: "Playfair Display", "Cinzel", serif;
+}
+.title-text{
+  max-width: 40vw;
+  line-height: 25px;
+  border-bottom: 2px solid #170C79;
+  padding-bottom: 25px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 60px;
+}
+.child-wrapper{
+  border-bottom: 3px dashed darkgreen;
+}
+.child{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 50px;
+  scroll-margin-top: 80px;
+}
+.child-wrapper:nth-child(even) .child{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.child-wrapper:last-child{
+  border-bottom: none;
+}
+.child img{
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 5px double navy;
+  border-radius: 40px;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: 55vw;
+  color: #2C3947;
+}
+.article-loca{
+  font-size: 12px;
+  background-color: #547A95;
+  padding: 10px 15px;
+  width: fit-content;
+  color: rgb(213, 212, 212);
+  border-radius: 20px;
+}
+.article a{
+  text-decoration: none;
+  color: white;
+  background-color: darkred;
+  width: fit-content;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.article a:hover{
+  background-color: rgb(94, 0, 0);
+  color: rgb(158, 158, 158);
+}
+
+.destination{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.google-map{
+  width: 100%;
+  height: 400px;
+  border-radius: 50px;
+}
+
+.destination-link{
+  text-decoration: none;
+  color: beige;
+  background-color: navy;
+  padding: 20px 80px;
+  border-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+  .title-text{
+    max-width: 60vw;
+  }
+
+  .container{
+    padding: 30px 40px;
+    gap: 40px;
+  }
+
+  .child{
+    gap: 20px;
+  }
+
+  .child img{
+    width: 320px;
+    height: 240px;
+  }
+
+  .article{
+    max-width: 60vw;
+  }
+
+  .destination-link{
+    padding: 18px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-wrapper{
+    padding: 20px 25px;
+  }
+
+  .title-header{
+    font-size: 30px;
+  }
+
+  .title-text{
+    max-width: 100%;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+
+  .container{
+    padding: 20px 25px;
+    gap: 35px;
+  }
+
+  /* Stack image + article vertically, and cancel the reversed order */
+  .child,
+  .child-wrapper:nth-child(even) .child{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .child img{
+    width: 100%;
+    max-width: 500px;
+    height: 260px;
+    border-radius: 25px;
+  }
+
+  .article{
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .article a{
+    align-self: center;
+  }
+
+  .google-map{
+    height: 300px;
+    border-radius: 25px;
+  }
+
+  .destination-link{
+    padding: 16px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1{
+    font-size: 15px;
+  }
+  header{
+    padding: 5px 25px;
+  }
+  nav ul{
+    gap: 35px;
+  }
+  nav li a{
+    font-size: 10px;
+  }
+  .title-header{
+    font-size: 24px;
+  }
+
+  .title-wrapper{
+    padding: 15px 20px;
+  }
+
+  .container{
+    padding: 15px 20px;
+    gap: 25px;
+  }
+
+  .child img{
+    height: 220px;
+  }
+}
+
+/* guide.css */
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-label {
+      padding: 14px 16px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card {
+        transition: none;
+      }
+    }
+
+/* components/destination2.css */
+.des-title{
+  font-size: 40px;
+}
+.destination{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px;
+  scroll-margin-top: 80px;
+}
+.google-map{
+  width: 100%;
+  height: 400px;
+  border-radius: 50px;
+}
+
+.destination-link{
+  text-decoration: none;
+  color: beige;
+  background-color: navy;
+  padding: 20px 80px;
+  border-radius: 30px;
+  font-weight: 800;
+}
+
+.destination-link:active{
+  background-color: rgb(1, 1, 73);
+  color: grey;
+}
+
+/* components/food_and_culture_2.css */
+.heading{
+  text-align: center;
+  margin-top: 40px;
+  scroll-margin-top: 80px;
+}
+.article-wrapper{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: navy;
+}
+.food-wrapper, .culture-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 50px;
+}
+.culture-wrapper{
+  background-color: navy;
+  color: white;
+}
+.food-wrapper h2, .culture-wrapper h2{
+  font-size: 40px;
+}
+.food, .culture{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.culture{
+  flex-direction: row-reverse;
+}
+.food img{
+  width: 30vw;
+  height: 45vh;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid navy;
+  padding: 5px;
+}
+.food-article, .culture-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.food-article a, .culture-article a{
+  background-color: darkred;
+  color: white;
+  padding: 15px 20px;
+  width: fit-content;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.food-article p, .culture-article p{
+  line-height: 25px;
+  font-size: 18px;
+}
+.food-article h3, .culture-article h3{
+  font-size: 35px;
+}
+.culture-wrapper video{
+  width: 35vw;
+  height: 30vh;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.culture-wrapper img{
+  width: 35vw;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid navy;
+  padding: 5px;
+}
+
+/*Make the image here responsive to the device because it look good on PC but on mobile phone it look small*/
+@media screen and (max-width: 600px) {
+
+  .culture-wrapper img{
+    width: 80vw;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid navy;
+    padding: 5px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .culture-wrapper img{
+    width: 45vw;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid navy;
+    padding: 2px;
+  }
+}
+
+/* components/travel_tips_2.css */
+.wrap {
+    max-width: 1000px;
+    margin: 40px auto;
+    scroll-margin-top: 80px;
+  }
+.wrap-h1 {
+    font-weight: 900;
+    color: #14146b;
+    font-size: 42px;
+    padding: 20px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #14146b;
+}
+th {
+    background: #14146b;
+    color: #ffffff;
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #d9d9f0;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 1.55;
+    color: #1a1a3d;
+}
+  tr:last-child td {
+    border-bottom: none;
+  }
+  tr:nth-child(even) td {
+    background: #f4f4fb;
+  }
+  .time {
+    font-weight: bold;
+    color: navy;
+    white-space: nowrap;
+    width: 170px;
+    font-size: 15px;
+  }
+
+/* components/review.css */
+.wrap-review {
+    max-width: 80vw;
+    margin: 50px auto;
+    scroll-margin-top: 80px;
+  }
+  h1 {
+    font-weight: 800;
+    color: #14146b;
+    font-size: 34px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: #7a7a7a;
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  /* Simple rating line */
+  .rating-line {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .score {
+    font-size: 40px;
+    font-weight: 800;
+    color: #14146b;
+  }
+  .stars {
+    color: #f5c518;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .count {
+    color: #7a7a7a;
+    font-size: 14px;
+  }
+  .badge {
+    color: #7a2e22;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 44px;
+  }
+  .review-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .review {
+    padding: 22px 0;
+    border-top: 1px solid #ececec;
+  }
+  .review:last-child {
+    border-bottom: 1px solid #ececec;
+  }
+  .review .stars {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .review p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 8px 0;
+  }
+  .review .who {
+    font-size: 13px;
+    color: #999;
+  }
+
+/* components/responsive.css */
+ /* for tablet */
+@media (max-width: 1024px) {
+
+  .article {
+    max-width: 85vw;
+  }
+
+  .food img,
+  .culture-wrapper video {
+    width: 45vw;
+    height: 30vh;
+  }
+
+  .review-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap,
+  .wrap-review {
+    max-width: 90vw;
+  }
+}
+
+
+
+   /* SMALL TABLET / LARGE PHONE (768px and below) */
+
+@media (max-width: 768px) {
+  header h1{
+    font-size: 15px;
+  }
+  header{
+    padding: 5px 25px;
+  }
+  nav ul{
+    gap: 35px;
+  }
+  nav li a{
+    font-size: 10px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .main-pic {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+
+  .link {
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .article {
+    max-width: 90vw;
+    padding: 15px;
+  }
+
+  .des-title {
+    font-size: 35px;
+  }
+
+  .google-map {
+    height: 250px;
+    border-radius: 10px;
+    width: 90vw;
+  }
+
+  .destination-link {
+    padding: 15px 40px;
+  }
+
+  .food,
+  .culture {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .food img,
+  .culture-wrapper video {
+    width: 90vw;
+    height: 220px;
+  }
+
+  .food-article,
+  .culture-article {
+    align-items: center;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  .wrap table tr {
+    margin-bottom: 15px;
+    border: 1px solid #d9d9f0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .wrap table td {
+    border-bottom: none;
+    padding: 10px 15px;
+  }
+
+  .time {
+    width: auto;
+    background: #14146b;
+    color: white;
+  }
+
+  .review-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .score {
+    font-size: 32px;
+  }
+}
+
+
+
+   /* MOBILE PHONE (480px and below) */
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .main-pic {
+    height: 220px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .link {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .link li {
+    font-size: 14px;
+  }
+
+  .article {
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .des-title {
+    font-size: 22px;
+  }
+
+  .food-article h3,
+  .culture-article h3 {
+    font-size: 22px;
+  }
+
+  .food-article p,
+  .culture-article p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .food img,
+  .culture-wrapper video {
+    height: 180px;
+  }
+
+  .wrap h1,
+  .wrap-review h1 {
+    font-size: 24px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .rating-line {
+    flex-wrap: wrap;
+  }
+
+  .wrap table tr:nth-child(odd) .time {
+    color: white;
+  }
+
+  .wrap table tr:nth-child(even) .time {
+    color: navy;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* sub.css */
+body{
+  font-family: "Noto Sans", "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Cinzel", "Playfair Display", "Domaine Display Narrow", "SilkSerif", serif;
+  font-weight: 700;
+}
+
+.title-header{
+  font-family: "Playfair Display", "Cinzel", serif;
+}
+
+.article h3{
+  font-family: "Domaine Display Narrow", "SilkSerif", serif;
+}
+
+body.angkor-page .title,
+body.angkor-page .des-title,
+body.angkor-page .heading,
+body.angkor-page .wrap-h1,
+body.angkor-page .article h3,
+body.angkor-page .food-wrapper h2,
+body.angkor-page .culture-wrapper h2 {
+  font-family: "Cinzel", "Playfair Display", "Domaine Display Narrow", "SilkSerif", serif;
+}
+
+body.oudong-page .title,
+body.oudong-page .des-title,
+body.oudong-page .heading,
+body.oudong-page .wrap-h1,
+body.oudong-page .article h3,
+body.oudong-page .food-wrapper h2,
+body.oudong-page .culture-wrapper h2 {
+  font-family: "Playfair Display", "Cinzel", "Domaine Display Narrow", serif;
+}
+
+body.royal-page .title,
+body.royal-page .des-title,
+body.royal-page .heading,
+body.royal-page .wrap-h1,
+body.royal-page .article h3,
+body.royal-page .food-wrapper h2,
+body.royal-page .culture-wrapper h2 {
+  font-family: "Domaine Display Narrow", "SilkSerif", "Cinzel", serif;
+}
+
+.article-loca{
+  font-family: "Montserrat", "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
