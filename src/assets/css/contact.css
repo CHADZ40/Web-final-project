@@ -10,8 +10,8 @@ body{
   color: #F3E4C9;
 }
 main{
-  padding: 60px 120px;
-  margin-bottom: 80px;
+  padding: 60px 80px;
+  margin-bottom: 30px;
 }
 main h1{
   display: inline-block;
@@ -31,7 +31,7 @@ main p{
   justify-content: space-around;
   color: #0A2947;
   gap: 30px;
-  margin: 0 30px;
+  margin: 0 80px;
 }
 .card{
   display: flex;
