@@ -1,259 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phnom Penh</title>
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <link rel="Icon" href="../assets/image/logo.ico" />
+  </head>
+  <style>
+    body {
+      background-color: #17433f;
+    }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phnom Penh</title>
-  <link rel="stylesheet" href="../assets/css/sub.css">
-  <link rel="Icon" href="../assets/image/logo.ico">
-</head>
-<style>
-  body {
-    background-color: #17433F;
-  }
+    .link {
+      background-color: #f9e8a2;
+      border: 1px dashed #17433f;
+    }
 
-  .link {
-    background-color: #F9E8A2;
-    border: 1px dashed #17433F;
-  }
+    .link a {
+      color: #17433f;
+    }
 
-  .link a {
-    color: #17433F;
-  }
+    .title {
+      color: #f9e8a2;
+    }
 
-  .title {
-    color: #F9E8A2;
-  }
+    .article {
+      color: #efeabb;
+      border-bottom: 2px solid #efeabb;
+    }
 
-  .article {
-    color: #EFEABB;
-    border-bottom: 2px solid #EFEABB;
-  }
+    /* destination */
+    .des-title {
+      color: #efeabb;
+    }
 
+    .destination-link {
+      background-color: #f9e8a2;
+      color: #245c8d;
+    }
 
+    hr {
+      border: 1px solid #f9e8a2;
+    }
 
-  /* destination */
-  .des-title {
-    color: #EFEABB;
-  }
+    /* Food and culture */
+    .heading {
+      color: #efeabb;
+    }
 
-  .destination-link {
-    background-color: #F9E8A2;
-    color: #245c8d;
-  }
+    .food-wrapper {
+      color: #f9e8a2;
+    }
 
-  hr {
-    border: 1px solid #F9E8A2;
-  }
+    .food-wrapper img {
+      border: 1px solid #f9e8a2;
+    }
 
-  /* Food and culture */
-  .heading {
-    color: #EFEABB;
-  }
+    .culture-wrapper {
+      background-color: #f9e8a2;
+      color: #17433f;
+    }
 
-  .food-wrapper {
-    color: #F9E8A2;
-  }
+    .culture-wrapper video {
+      border: 1px solid #245c8d;
+    }
 
-  .food-wrapper img {
-    border: 1px solid #F9E8A2;
-  }
+    /* Travel Tips */
+    .wrap-h1 {
+      color: #efeabb;
+    }
 
-  .culture-wrapper {
-    background-color: #F9E8A2;
-    color: #17433F;
-  }
+    th {
+      background-color: #f9e8a2;
+      color: #17433f;
+    }
 
-  .culture-wrapper video {
-    border: 1px solid #245c8d;
-  }
+    td {
+      color: #efeabb;
+    }
 
-  /* Travel Tips */
-  .wrap-h1 {
-    color: #EFEABB;
-  }
+    .time {
+      color: #f9e8a2;
+    }
 
-  th {
-    background-color: #F9E8A2;
-    color: #17433F;
-  }
+    tr:nth-child(even) td {
+      background: #f9e8a2;
+      color: #17433f;
+    }
 
-  td {
-    color: #EFEABB;
-  }
+    /* Review */
+    .wrap-review h1 {
+      color: #efeabb;
+    }
 
-  .time {
-    color: #F9E8A2;
-  }
+    .score {
+      color: #f9e8a2;
+    }
 
-  tr:nth-child(even) td {
-    background: #F9E8A2;
-    color: #17433F;
-  }
+    .subtitle {
+      color: red;
+    }
 
-  /* Review */
-  .wrap-review h1 {
-    color: #EFEABB;
-  }
+    .badge {
+      color: red;
+    }
 
-  .score {
-    color: #F9E8A2;
-  }
+    .count {
+      color: #f9e8a2;
+    }
 
-  .subtitle {
-    color: red;
-  }
+    .review p {
+      color: white;
+    }
 
-  .badge {
-    color: red;
-  }
+    .review .who {
+      color: #558467;
+    }
+  </style>
 
-  .count {
-    color: #F9E8A2;
-  }
-
-  .review p {
-    color: white;
-  }
-
-  .review .who {
-    color: #558467;
-  }
-</style>
-
-<body class="royal-page">
-  <header id="topofpage">
-    <a href="../index.html"><img src="../assets/image/logo.PNG" alt="logo" /></a>
-    <h1>Tourism and Travel Guide</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#topofpage">Home</a></li>
-      <li><a href="#destination">Desination</a></li>
-      <li><a href="#food&culture">Food & Culture</a></li>
-      <li><a href="#travel_tips">Travel Tips</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <body class="royal-page">
+    <header id="topofpage">
+      <a href="../index.html"
+        ><img src="../assets/image/logo.PNG" alt="logo"
+      /></a>
+      <h1>Tourism and Travel Guide</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#topofpage">Home</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#food&culture">Food & Culture</a></li>
+        <li><a href="#travel_tips">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <img class="main-pic" src="/assets/image/palace.jpg" alt="main-pic" />
+    <h1 class="title">Phnom Penh</h1>
+    <ul class="link">
+      <li><a href="/Components/Angkor.html">Angkor Wat</a></li>
+      |
+      <li><a href="/Components/Oudong.html">Oudong Mountain</a></li>
+      |
+      <li><a href="/Components/Kohrong.html">Koh Rong</a></li>
     </ul>
-  </nav>
-  <img class="main-pic" src="/assets/image/palace.jpg" alt="main-pic">
-  <h1 class="title">Phnom Penh</h1>
-  <ul class="link">
-    <li><a href="/Components/Angkor.html">Angkor Wat</a></li>|
-    <li><a href="/Components/Oudong.html">Oudong Mountain</a></li>|
-    <li><a href="/Components/Kohrong.html">Koh Rong</a></li>
-  </ul>
-  <div class="article">
-    <p>Standing along the banks of the <span style="color: black; font-weight: bold">Mekong River</span> in the heart of <span style="color: black; font-weight: bold">Phnom Penh</span>, <span style="color: black; font-weight: bold">the Royal Palace</span> is a magnificent symbol of Cambodia’s monarchy, culture, and architectural heritage. Built in the 19th century, this elegant complex serves as the official residence of the Cambodian King and showcases a blend of traditional Khmer design with influences from classical architecture. With its golden spires, grand throne hall, and the nearby Silver Pagoda housing precious religious treasures, the Royal Palace offers visitors a glimpse into Cambodia’s royal traditions and spiritual identity.</p>
-  </div>
+    <div class="article">
+      <p>
+        Standing along the banks of the
+        <span style="color: black; font-weight: bold">Mekong River</span> in the
+        heart of
+        <span style="color: black; font-weight: bold">Phnom Penh</span>,
+        <span style="color: black; font-weight: bold">the Royal Palace</span> is
+        a magnificent symbol of Cambodia’s monarchy, culture, and architectural
+        heritage. Built in the 19th century, this elegant complex serves as the
+        official residence of the Cambodian King and showcases a blend of
+        traditional Khmer design with influences from classical architecture.
+        With its golden spires, grand throne hall, and the nearby Silver Pagoda
+        housing precious religious treasures, the Royal Palace offers visitors a
+        glimpse into Cambodia’s royal traditions and spiritual identity.
+      </p>
+    </div>
 
-  <!-- Destination -->
-  <div class="destination" id="destination">
-    <h2 class="des-title">Destination</h2>
-    <iframe class="google-map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.5493033424455!2d104.92867717510019!3d11.563876988636846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0xf8f1809319cea6df!2sRoyal%20Palace%20of%20Cambodia!5e1!3m2!1sen!2skh!4v1783152645775!5m2!1sen!2skh"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    <a class="destination-link" href="https://maps.app.goo.gl/9wkzotdjACp45yG66" target="_blank">Take me there</a>
-  </div>
-  <hr>
+    <!-- Destination -->
+    <div class="destination" id="destination">
+      <h2 class="des-title">Destination</h2>
+      <iframe
+        class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.5493033424455!2d104.92867717510019!3d11.563876988636846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0xf8f1809319cea6df!2sRoyal%20Palace%20of%20Cambodia!5e1!3m2!1sen!2skh!4v1783152645775!5m2!1sen!2skh"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <a
+        class="destination-link"
+        href="https://maps.app.goo.gl/9wkzotdjACp45yG66"
+        target="_blank"
+        >Take me there</a
+      >
+    </div>
+    <hr />
 
-  <!-- Food and Culture -->
-  <article>
-    <div class="container" id="food&culture">
-      <div class="wrapper">
-        <h1 class="heading">Food and Culture</h1>
-        <div class="article-wrapper">
-          <div class="food-wrapper">
-            <h2>Food</h2>
-            <div class="food">
-              <img src="../assets/image/rice.webp" alt="Food">
-              <div class="food-article">
-                <h3>Phnom Penh Chicken Rice</h3>
-                <p>A beloved local dish in Cambodia’s capital, Phnom Penh chicken rice features tender, flavorful chicken served with fragrant steamed rice cooked with aromatic spices and chicken broth. Often accompanied by fresh cucumber, herbs, pickled vegetables, and a savory dipping sauce, the dish offers a comforting balance of rich, savory, and refreshing flavors. Popular among locals and visitors alike, it represents the simple yet delicious street food culture found throughout Phnom Penh.</p>
+    <!-- Food and Culture -->
+    <article>
+      <div class="container" id="food&culture">
+        <div class="wrapper">
+          <h1 class="heading">Food and Culture</h1>
+          <div class="article-wrapper">
+            <div class="food-wrapper">
+              <h2>Food</h2>
+              <div class="food">
+                <img src="../assets/image/rice.webp" alt="Food" />
+                <div class="food-article">
+                  <h3>Phnom Penh Chicken Rice</h3>
+                  <p>
+                    A beloved local dish in Cambodia’s capital, Phnom Penh
+                    chicken rice features tender, flavorful chicken served with
+                    fragrant steamed rice cooked with aromatic spices and
+                    chicken broth. Often accompanied by fresh cucumber, herbs,
+                    pickled vegetables, and a savory dipping sauce, the dish
+                    offers a comforting balance of rich, savory, and refreshing
+                    flavors. Popular among locals and visitors alike, it
+                    represents the simple yet delicious street food culture
+                    found throughout Phnom Penh.
+                  </p>
+                </div>
+              </div>
+              <div class="food">
+                <img src="../assets/image/kuyteav.webp" alt="Food" />
+                <div class="food-article">
+                  <h3>Kuy Teav</h3>
+                  <p>
+                    A traditional Cambodian noodle soup and one of the most
+                    popular breakfast dishes in Phnom Penh, Kuy Teav is made
+                    with smooth rice noodles served in a rich, aromatic broth.
+                    The soup is commonly topped with sliced pork, beef, seafood,
+                    or meatballs, along with fresh herbs, bean sprouts, lime,
+                    and chili for added flavor. Known for its comforting taste
+                    and delicate balance of savory and fresh ingredients, Kuy
+                    Teav reflects Cambodia’s everyday food culture and is a
+                    must-try dish for visitors exploring the capital.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="food">
-              <img
-                src="../assets/image/kuyteav.webp"
-                alt="Food">
-              <div class="food-article">
-                <h3>Kuy Teav</h3>
-                <p>A traditional Cambodian noodle soup and one of the most popular breakfast dishes in Phnom Penh, Kuy Teav is made with smooth rice noodles served in a rich, aromatic broth. The soup is commonly topped with sliced pork, beef, seafood, or meatballs, along with fresh herbs, bean sprouts, lime, and chili for added flavor. Known for its comforting taste and delicate balance of savory and fresh ingredients, Kuy Teav reflects Cambodia’s everyday food culture and is a must-try dish for visitors exploring the capital.</p>
+            <div class="culture-wrapper">
+              <h2>Culture</h2>
+              <div class="culture">
+                <img src="../assets/image/royaldecor.jpg" alt="Food" />
+                <div class="culture-article">
+                  <h3>Khmer Art and Craftsmanship</h3>
+                  <p>
+                    The palace displays Cambodia’s rich artistic heritage
+                    through detailed murals, sculptures, carvings, and
+                    traditional decorations. The craftsmanship reflects the
+                    skills of Khmer artists and the country’s long history of
+                    architectural excellence.
+                  </p>
+                  <a
+                    href="https://topmekongcruises.com/royal-palace"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="culture-wrapper">
-            <h2>Culture</h2>
-            <div class="culture">
-              <img src="../assets/image/royaldecor.jpg" alt="Food">
-              <div class="culture-article">
-                <h3>Khmer Art and Craftsmanship</h3>
-                <p>The palace displays Cambodia’s rich artistic heritage through detailed murals, sculptures, carvings, and traditional decorations. The craftsmanship reflects the skills of Khmer artists and the country’s long history of architectural excellence.</p>
-                <a href="https://topmekongcruises.com/royal-palace" target="_blank">Explore More</a>
-              </div>
-            </div>
-            <div class="culture">
-              <img src="../assets/image/royalplace.jpg" alt="Food">
-              <div class="culture-article">
-                <h3>Symbol of the Cambodian Monarchy</h3>
-                <p>The Royal Palace represents the history, identity, and continuity of Cambodia’s royal institution. As the official residence of the King of Cambodia, it remains an important place for royal ceremonies, national events, and traditional celebrations.</p>
-                <a href="https://en.wikipedia.org/wiki/Royal_Palace_of_Cambodia" target="_blank">Explore More</a>
+              <div class="culture">
+                <img src="../assets/image/royalplace.jpg" alt="Food" />
+                <div class="culture-article">
+                  <h3>Symbol of the Cambodian Monarchy</h3>
+                  <p>
+                    The Royal Palace represents the history, identity, and
+                    continuity of Cambodia’s royal institution. As the official
+                    residence of the King of Cambodia, it remains an important
+                    place for royal ceremonies, national events, and traditional
+                    celebrations.
+                  </p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Royal_Palace_of_Cambodia"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </article>
+
+    <!-- Travel tips -->
+    <div class="wrap" id="travel_tips">
+      <h1 class="wrap-h1">Angkor Wat — General Day Flow</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Time of Day</th>
+            <th>What to Do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time">Early Morning</td>
+            <td>
+              Arrive at the Royal Palace early to enjoy the peaceful atmosphere
+              before larger crowds arrive. The morning light is also ideal for
+              viewing the palace’s golden roofs and detailed architecture.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Morning</td>
+            <td>
+              Begin exploring the Royal Palace complex, including the Throne
+              Hall and royal buildings. Learn about Cambodia’s monarchy, royal
+              traditions, and the important role the palace plays in national
+              identity.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Late-Morning</td>
+            <td>
+              Visit the Silver Pagoda, one of Cambodia’s most important Buddhist
+              sites. Admire its sacred Buddha statues, valuable treasures, and
+              beautiful artwork that reflect the country’s spiritual heritage.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Midday</td>
+            <td>
+              Take a break at a nearby café or restaurant and experience Phnom
+              Penh’s local food culture. Try traditional dishes such as Kuy
+              Teav, Phnom Penh chicken rice, or other Khmer specialties.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Early Afternoon</td>
+            <td>
+              Continue exploring the surrounding area, including nearby
+              riverside streets and cultural landmarks. Enjoy views along the
+              Mekong River and observe the daily life of the capital city.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Mid-Afternoon</td>
+            <td>
+              Visit local markets or souvenir shops to discover Cambodian
+              handicrafts, traditional products, and gifts. This is a good
+              opportunity to experience the creativity and craftsmanship of
+              local communities.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Late Afternoon</td>
+            <td>
+              Return near the palace area to enjoy the changing atmosphere as
+              the city becomes more active. The riverside area is a relaxing
+              place to take photos and appreciate Phnom Penh’s urban landscape.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Evening</td>
+            <td>
+              End the day with dinner at a local restaurant or along the
+              riverside. Enjoy Cambodian cuisine while reflecting on the
+              history, architecture, and cultural experiences from the palace
+              visit.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </article>
-
-  <!-- Travel tips -->
-  <div class="wrap" id="travel_tips">
-    <h1 class="wrap-h1">Angkor Wat — General Day Flow</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Time of Day</th>
-          <th>What to Do</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="time">Early Morning</td>
-          <td>Arrive at the Royal Palace early to enjoy the peaceful atmosphere before larger crowds arrive. The morning light is also ideal for viewing the palace’s golden roofs and detailed architecture.</td>
-        </tr>
-        <tr>
-          <td class="time">Morning</td>
-          <td>Begin exploring the Royal Palace complex, including the Throne Hall and royal buildings. Learn about Cambodia’s monarchy, royal traditions, and the important role the palace plays in national identity.</td>
-        </tr>
-        <tr>
-          <td class="time">Late-Morning</td>
-          <td>Visit the Silver Pagoda, one of Cambodia’s most important Buddhist sites. Admire its sacred Buddha statues, valuable treasures, and beautiful artwork that reflect the country’s spiritual heritage.</td>
-        </tr>
-        <tr>
-          <td class="time">Midday</td>
-          <td>Take a break at a nearby café or restaurant and experience Phnom Penh’s local food culture. Try traditional dishes such as Kuy Teav, Phnom Penh chicken rice, or other Khmer specialties.</td>
-        </tr>
-        <tr>
-          <td class="time">Early Afternoon</td>
-          <td>Continue exploring the surrounding area, including nearby riverside streets and cultural landmarks. Enjoy views along the Mekong River and observe the daily life of the capital city.</td>
-        </tr>
-        <tr>
-          <td class="time">Mid-Afternoon</td>
-          <td>Visit local markets or souvenir shops to discover Cambodian handicrafts, traditional products, and gifts. This is a good opportunity to experience the creativity and craftsmanship of local communities.</td>
-        </tr>
-        <tr>
-          <td class="time">Late Afternoon</td>
-          <td>Return near the palace area to enjoy the changing atmosphere as the city becomes more active. The riverside area is a relaxing place to take photos and appreciate Phnom Penh’s urban landscape.</td>
-        </tr>
-        <tr>
-          <td class="time">Evening</td>
-          <td>End the day with dinner at a local restaurant or along the riverside. Enjoy Cambodian cuisine while reflecting on the history, architecture, and cultural experiences from the palace visit.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
-</body>
-
+    <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
+  </body>
 </html>

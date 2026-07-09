@@ -1,228 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siem Reap</title>
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <link rel="Icon" href="../assets/image/logo.ico" />
+  </head>
+  <style>
+    body {
+      background-color: #78a4cb;
+    }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siem Reap</title>
-  <link rel="stylesheet" href="../assets/css/sub.css">
-  <link rel="Icon" href="../assets/image/logo.ico">
-</head>
-<style>
-  body {
-    background-color: #78A4CB;
-  }
+    .link {
+      background-color: #f9e8a2;
+      border: 1px dashed #245c8d;
+    }
 
-  .link {
-    background-color: #F9E8A2;
-    border: 1px dashed #245c8d;
-  }
+    .link a {
+      color: #245c8d;
+    }
 
-  .link a {
-    color: #245c8d;
-  }
+    .title {
+      color: #f9e8a2;
+    }
 
-  .title {
-    color: #F9E8A2;
-  }
+    .article {
+      color: white;
+    }
 
-  .article {
-    color: white;
+    /* destination */
+    .des-title {
+      color: white;
+    }
 
-  }
+    .destination-link {
+      background-color: #f9e8a2;
+      color: #245c8d;
+    }
 
-  /* destination */
-  .des-title {
-    color: white;
-  }
+    /* Food and culture */
+    .heading {
+      color: white;
+    }
 
-  .destination-link {
-    background-color: #F9E8A2;
-    color: #245c8d;
-  }
+    .food-wrapper {
+      color: white;
+    }
 
-  /* Food and culture */
-  .heading {
-    color: white;
-  }
+    .food-wrapper img {
+      border: 1px solid #f9e8a2;
+    }
 
-  .food-wrapper {
-    color: white;
-  }
+    .culture-wrapper {
+      background-color: #f9e8a2;
+      color: #245c8d;
+    }
 
-  .food-wrapper img {
-    border: 1px solid #F9E8A2;
-  }
+    .culture-wrapper video {
+      border: 1px solid #245c8d;
+    }
 
-  .culture-wrapper {
-    background-color: #F9E8A2;
-    color: #245c8d;
-  }
+    /* Travel Tips */
+    tr:nth-child(even) td {
+      background: #f9e8a2;
+      color: #245c8d;
+    }
 
-  .culture-wrapper video {
-    border: 1px solid #245c8d;
-  }
+    /* Review */
+    .subtitle {
+      color: #f9e8a2;
+    }
 
-  /* Travel Tips */
-  tr:nth-child(even) td {
-    background: #F9E8A2;
-    color: #245c8d;
-  }
+    .count {
+      color: #f9e8a2;
+    }
 
-  /* Review */
-  .subtitle {
-    color: #F9E8A2;
-  }
+    .review p {
+      color: white;
+    }
 
-  .count {
-    color: #F9E8A2;
-  }
+    .review .who {
+      color: #245c8d;
+    }
+  </style>
 
-  .review p {
-    color: white;
-  }
-
-  .review .who {
-    color: #245c8d;
-  }
-</style>
-
-<body>
-  <header id="topofpage">
-    <a href="../index.html"><img src="../assets/image/logo.PNG" alt="logo" /></a>
-    <h1>Tourism and Travel Guide</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#topofpage">Home</a></li>
-      <li><a href="#destination">Desination</a></li>
-      <li><a href="#food&culture">Food & Culture</a></li>
-      <li><a href="#travel_tips">Travel Tips</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <body>
+    <header id="topofpage">
+      <a href="../index.html"
+        ><img src="../assets/image/logo.PNG" alt="logo"
+      /></a>
+      <h1>Tourism and Travel Guide</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#topofpage">Home</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#food&culture">Food & Culture</a></li>
+        <li><a href="#travel_tips">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <img class="main-pic" src="/assets/image/kohrong.jpg" alt="main-pic" />
+    <h1 class="title">Koh Rong</h1>
+    <ul class="link">
+      <li><a href="/Components/Angkor.html">Angkor Wat</a></li>
+      |
+      <li><a href="/Components/Oudong.html">Oudong Mountain</a></li>
+      |
+      <li><a href="/Components/Royal.html">Royal Palace</a></li>
     </ul>
-  </nav>
-  <img class="main-pic" src="/assets/image/kohrong.jpg" alt="main-pic">
-  <h1 class="title">Koh Rong</h1>
-  <ul class="link">
-    <li><a href="/Components/Angkor.html">Angkor Wat</a></li>|
-    <li><a href="/Components/Oudong.html">Oudong Mountain</a></li>|
-    <li><a href="/Components/Royal.html">Royal Palace</a></li>
-  </ul>
-  <div class="article">
-    <p>Located off the <span style="color: black; font-weight: bold">southern coast of Cambodia</span>, <span style="color: black; font-weight: bold">Koh Rong</span> is a tropical island renowned for its crystal-clear turquoise waters, powdery white-sand beaches, and lush tropical forests. Offering a perfect blend of relaxation and adventure, the island is a popular destination for swimming, snorkeling, diving, kayaking, and island hopping. Whether you're seeking breathtaking sunsets, vibrant marine life, or a peaceful escape from the mainland, <span style="color: black; font-weight: bold">Koh Rong</span> provides an unforgettable beach experience in one of Cambodia's most beautiful island destinations.</p>
-  </div>
+    <div class="article">
+      <p>
+        Located off the
+        <span style="color: black; font-weight: bold"
+          >southern coast of Cambodia</span
+        >, <span style="color: black; font-weight: bold">Koh Rong</span> is a
+        tropical island renowned for its crystal-clear turquoise waters, powdery
+        white-sand beaches, and lush tropical forests. Offering a perfect blend
+        of relaxation and adventure, the island is a popular destination for
+        swimming, snorkeling, diving, kayaking, and island hopping. Whether
+        you're seeking breathtaking sunsets, vibrant marine life, or a peaceful
+        escape from the mainland,
+        <span style="color: black; font-weight: bold">Koh Rong</span> provides
+        an unforgettable beach experience in one of Cambodia's most beautiful
+        island destinations.
+      </p>
+    </div>
 
-  <!-- Destination -->
-  <div class="destination" id="destination">
-    <h2 class="des-title">Destination</h2>
-    <iframe class="google-map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126754.58659911672!2d103.16590830385748!3d10.715580974696314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3107c1eb6f5622a1%3A0x836af75a469a1d58!2sKoh%20Rong!5e1!3m2!1sen!2skh!4v1783152743111!5m2!1sen!2skh"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    <a class="destination-link" href="https://maps.app.goo.gl/EVdQ1iaPgGozKk9U9" target="_blank">Take me there</a>
-  </div>
-  <hr>
+    <!-- Destination -->
+    <div class="destination" id="destination">
+      <h2 class="des-title">Destination</h2>
+      <iframe
+        class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126754.58659911672!2d103.16590830385748!3d10.715580974696314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3107c1eb6f5622a1%3A0x836af75a469a1d58!2sKoh%20Rong!5e1!3m2!1sen!2skh!4v1783152743111!5m2!1sen!2skh"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+      <a
+        class="destination-link"
+        href="https://maps.app.goo.gl/EVdQ1iaPgGozKk9U9"
+        target="_blank"
+        >Take me there</a
+      >
+    </div>
+    <hr />
 
-  <!-- Food and Culture -->
-  <article>
-    <div class="container" id="food&culture">
-      <div class="wrapper">
-        <h1 class="heading">Food and Culture</h1>
-        <div class="article-wrapper">
-          <div class="food-wrapper">
-            <h2>Food</h2>
-            <div class="food">
-              <img src="/assets/image/grilled-squid.jpg" alt="Food">
-              <div class="food-article">
-                <h3>Grilled Squid</h3>
-                <p>A popular seafood specialty on Koh Rong, grilled squid is prepared fresh from the day's catch and cooked over charcoal to enhance its natural sweetness. Lightly seasoned with Khmer spices and often served with a tangy chili-lime dipping sauce, it offers a smoky, tender flavor that perfectly captures the island's coastal cuisine.</p>
+    <!-- Food and Culture -->
+    <article>
+      <div class="container" id="food&culture">
+        <div class="wrapper">
+          <h1 class="heading">Food and Culture</h1>
+          <div class="article-wrapper">
+            <div class="food-wrapper">
+              <h2>Food</h2>
+              <div class="food">
+                <img src="/assets/image/grilled-squid.jpg" alt="Food" />
+                <div class="food-article">
+                  <h3>Grilled Squid</h3>
+                  <p>
+                    A popular seafood specialty on Koh Rong, grilled squid is
+                    prepared fresh from the day's catch and cooked over charcoal
+                    to enhance its natural sweetness. Lightly seasoned with
+                    Khmer spices and often served with a tangy chili-lime
+                    dipping sauce, it offers a smoky, tender flavor that
+                    perfectly captures the island's coastal cuisine.
+                  </p>
+                </div>
+              </div>
+              <div class="food">
+                <img src="/assets/image/loklak.webp" alt="Food" />
+                <div class="food-article">
+                  <h3>Lok Lak</h3>
+                  <p>
+                    A beloved Cambodian classic, Lok Lak features tender slices
+                    of stir-fried beef marinated in a flavorful blend of Khmer
+                    seasonings. Traditionally served with fresh vegetables,
+                    rice, and a signature pepper-lime dipping sauce, this hearty
+                    dish offers a perfect balance of savory, tangy, and slightly
+                    sweet flavors. It is a must-try meal for visitors looking to
+                    experience authentic Cambodian cuisine.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="food">
-              <img
-                src="/assets/image/loklak.webp"
-                alt="Food">
-              <div class="food-article">
-                <h3>Lok Lak</h3>
-                <p>A beloved Cambodian classic, Lok Lak features tender slices of stir-fried beef marinated in a flavorful blend of Khmer seasonings. Traditionally served with fresh vegetables, rice, and a signature pepper-lime dipping sauce, this hearty dish offers a perfect balance of savory, tangy, and slightly sweet flavors. It is a must-try meal for visitors looking to experience authentic Cambodian cuisine.</p>
+            <div class="culture-wrapper">
+              <h2>Culture</h2>
+              <div class="culture">
+                <img src="/assets/image/fishing-kohrong.webp" alt="Food" />
+                <div class="culture-article">
+                  <h3>Island Fishing Culture</h3>
+                  <p>
+                    Fishing has been the heart of Koh Rong’s local community for
+                    generations. Many residents depend on the sea for their
+                    livelihood, using traditional fishing techniques to catch
+                    squid, fish, and other seafood. Visitors can experience this
+                    connection to the ocean through local seafood markets,
+                    fishing boats, and freshly prepared coastal dishes.
+                  </p>
+                  <a
+                    href="https://www.visitkohrong.com/fishing-trips-on-koh-rong/"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="culture-wrapper">
-            <h2>Culture</h2>
-            <div class="culture">
-              <img src="/assets/image/fishing-kohrong.webp" alt="Food">
-              <div class="culture-article">
-                <h3>Island Fishing Culture</h3>
-                <p>Fishing has been the heart of Koh Rong’s local community for generations. Many residents depend on the sea for their livelihood, using traditional fishing techniques to catch squid, fish, and other seafood. Visitors can experience this connection to the ocean through local seafood markets, fishing boats, and freshly prepared coastal dishes.</p>
-                <a href="https://www.visitkohrong.com/fishing-trips-on-koh-rong/" target="_blank">Explore More</a>
-              </div>
-            </div>
-            <div class="culture">
-              <img src="/assets/image/kohrong-life.jpg" alt="Food">
-              <div class="culture-article">
-                <h3>Khmer Coastal Lifestyle</h3>
-                <p>Koh Rong reflects a relaxed Khmer island lifestyle where life moves at a slower pace. Local communities often gather around the beaches, share meals, and maintain close relationships with neighbors. This simple way of living allows visitors to experience the warmth and hospitality of Cambodian coastal communities.</p>
-                <a href="https://www.global-gallivanting.com/koh-rong-paradise-found-or-paradise-lost/" target="_blank">Explore More</a>
+              <div class="culture">
+                <img src="/assets/image/kohrong-life.jpg" alt="Food" />
+                <div class="culture-article">
+                  <h3>Khmer Coastal Lifestyle</h3>
+                  <p>
+                    Koh Rong reflects a relaxed Khmer island lifestyle where
+                    life moves at a slower pace. Local communities often gather
+                    around the beaches, share meals, and maintain close
+                    relationships with neighbors. This simple way of living
+                    allows visitors to experience the warmth and hospitality of
+                    Cambodian coastal communities.
+                  </p>
+                  <a
+                    href="https://www.global-gallivanting.com/koh-rong-paradise-found-or-paradise-lost/"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </article>
+
+    <!-- Travel tips -->
+    <div class="wrap" id="travel_tips">
+      <h1 class="wrap-h1">Koh Rong — General Day Flow</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Time of Day</th>
+            <th>What to Do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time">Early Morning</td>
+            <td>
+              Travel from Sihanoukville to Koh Rong by ferry. Enjoy the ocean
+              views along the way as the island’s tropical landscape slowly
+              comes into view.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Morning</td>
+            <td>
+              Arrive on the island and explore the main beach areas. Take a walk
+              along the white sandy coastline, enjoy the clear water, and
+              experience the peaceful island atmosphere before it gets busier.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Late Morning</td>
+            <td>
+              Spend time swimming, snorkeling, or kayaking in the turquoise
+              waters. This is one of the best times to discover Koh Rong’s
+              colorful marine life and beautiful coral areas.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Lunch</td>
+            <td>
+              Enjoy fresh seafood and local Cambodian dishes at a beachside
+              restaurant. Try island favorites such as grilled squid, fresh
+              fish, prawns, or classic Khmer dishes like Lok Lak while enjoying
+              the ocean view.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Early Afternoon</td>
+            <td>
+              Relax on the beach, explore nearby areas, or join an island
+              adventure such as a boat trip, snorkeling tour, or a visit to
+              quieter beaches. The slower pace allows visitors to fully
+              experience the island lifestyle.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Mid-Afternoon</td>
+            <td>
+              Visit a local fishing village or explore small shops and cafés to
+              experience the daily life of the island community. Learn how local
+              families maintain their connection with the sea through fishing
+              and seafood traditions.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Late Afternoon</td>
+            <td>
+              Head to the beach to watch the sunset over the Gulf of Thailand.
+              The golden sky and calm waves create one of Koh Rong’s most
+              memorable moments.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Evening</td>
+            <td>
+              Enjoy dinner by the shore with fresh seafood and local flavors.
+              After dark, experience Koh Rong’s famous night atmosphere,
+              including beach walks and the natural phenomenon of glowing
+              plankton in the water (when conditions are suitable).
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Night</td>
+            <td>
+              Relax under the stars and enjoy the peaceful island environment
+              before returning or staying overnight in one of the island’s
+              accommodations.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </article>
-
-  <!-- Travel tips -->
-  <div class="wrap" id="travel_tips">
-    <h1 class="wrap-h1">Koh Rong — General Day Flow</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Time of Day</th>
-          <th>What to Do</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="time">Early Morning</td>
-          <td>Travel from Sihanoukville to Koh Rong by ferry. Enjoy the ocean views along the way as the island’s tropical landscape slowly comes into view.</td>
-        </tr>
-        <tr>
-          <td class="time">Morning</td>
-          <td>Arrive on the island and explore the main beach areas. Take a walk along the white sandy coastline, enjoy the clear water, and experience the peaceful island atmosphere before it gets busier.</td>
-        </tr>
-        <tr>
-          <td class="time">Late Morning</td>
-          <td>Spend time swimming, snorkeling, or kayaking in the turquoise waters. This is one of the best times to discover Koh Rong’s colorful marine life and beautiful coral areas.</td>
-        </tr>
-        <tr>
-          <td class="time">Lunch</td>
-          <td>Enjoy fresh seafood and local Cambodian dishes at a beachside restaurant. Try island favorites such as grilled squid, fresh fish, prawns, or classic Khmer dishes like Lok Lak while enjoying the ocean view.</td>
-        </tr>
-        <tr>
-          <td class="time">Early Afternoon</td>
-          <td>Relax on the beach, explore nearby areas, or join an island adventure such as a boat trip, snorkeling tour, or a visit to quieter beaches. The slower pace allows visitors to fully experience the island lifestyle.</td>
-        </tr>
-        <tr>
-          <td class="time">Mid-Afternoon</td>
-          <td>Visit a local fishing village or explore small shops and cafés to experience the daily life of the island community. Learn how local families maintain their connection with the sea through fishing and seafood traditions.</td>
-        </tr>
-        <tr>
-          <td class="time">Late Afternoon</td>
-          <td>Head to the beach to watch the sunset over the Gulf of Thailand. The golden sky and calm waves create one of Koh Rong’s most memorable moments.</td>
-        </tr>
-        <tr>
-          <td class="time">Evening</td>
-          <td>Enjoy dinner by the shore with fresh seafood and local flavors. After dark, experience Koh Rong’s famous night atmosphere, including beach walks and the natural phenomenon of glowing plankton in the water (when conditions are suitable).</td>
-        </tr>
-        <tr>
-          <td class="time">Night</td>
-          <td>Relax under the stars and enjoy the peaceful island environment before returning or staying overnight in one of the island’s accommodations.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
     <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
-</body>
-
+  </body>
 </html>

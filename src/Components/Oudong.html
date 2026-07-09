@@ -1,273 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oudong</title>
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <link rel="Icon" href="../assets/image/logo.ico" />
+  </head>
+  <style>
+    body {
+      background-color: #fffde1;
+    }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oudong</title>
-  <link rel="stylesheet" href="../assets/css/sub.css">
-  <link rel="Icon" href="../assets/image/logo.ico">
-</head>
-<style>
-  body {
-    background-color: #FFFDE1;
-  }
+    .link {
+      background-color: #93bd57;
+      border: 1px dashed #980404;
+    }
 
-  .link {
-    background-color: #93BD57;
-    border: 1px dashed #980404;
-  }
+    .link a {
+      color: white;
+    }
 
-  .link a {
-    color: white;
-  }
+    .title {
+      color: #980404;
+    }
 
-  .title {
-    color: #980404;
-  }
+    .article {
+      color: #980404;
+      border-bottom: 2px solid #980404;
+    }
 
-  .article {
-    color: #980404;
-    border-bottom: 2px solid #980404;
-  }
+    /* destination */
+    .des-title {
+      color: #17433f;
+    }
 
+    .destination-link {
+      background-color: #980404;
+      color: #efeabb;
+    }
 
+    .destination-link:hover {
+      background-color: #570101;
+    }
 
-  /* destination */
-  .des-title {
-    color: #17433F;
-  }
+    hr {
+      border: 1px solid #17433f;
+    }
 
-  .destination-link {
-    background-color: #980404;
-    color: #EFEABB;
-  }
+    /* Food and culture */
+    .heading {
+      color: #17433f;
+    }
 
-  .destination-link:hover {
-    background-color: #570101;
-  }
+    .food-wrapper {
+      color: #570101;
+    }
 
-  hr {
-    border: 1px solid #17433F;
-  }
+    .food-wrapper img {
+      border: 1px solid #570101;
+    }
 
-  /* Food and culture */
-  .heading {
-    color: #17433F;
-  }
+    .culture-wrapper {
+      background-color: #f9e8a2;
+      color: #17433f;
+    }
 
-  .food-wrapper {
-    color: #570101;
-  }
+    .culture-wrapper video {
+      border: 1px solid #980404;
+    }
 
-  .food-wrapper img {
-    border: 1px solid #570101;
-  }
+    /* Travel Tips */
+    .wrap-h1 {
+      color: #570101;
+    }
 
-  .culture-wrapper {
-    background-color: #F9E8A2;
-    color: #17433F;
-  }
+    th {
+      background-color: #f9e8a2;
+      color: #17433f;
+    }
 
-  .culture-wrapper video {
-    border: 1px solid #980404;
-  }
+    td {
+      color: #570101;
+    }
 
-  /* Travel Tips */
-  .wrap-h1 {
-    color: #570101;
-  }
+    .time {
+      color: #17433f;
+    }
 
-  th {
-    background-color: #F9E8A2;
-    color: #17433F;
-  }
+    tr:nth-child(even) td {
+      background: #f9e8a2;
+      color: #17433f;
+    }
 
-  td {
-    color: #570101;
-  }
+    /* Review */
+    .wrap-review h1 {
+      color: #17433f;
+    }
 
-  .time {
-    color: #17433F;
-  }
+    .score {
+      color: #980404;
+    }
 
-  tr:nth-child(even) td {
-    background: #F9E8A2;
-    color: #17433F;
-  }
+    .subtitle,
+    .badge {
+      color: #570101;
+    }
 
-  /* Review */
-  .wrap-review h1 {
-    color: #17433F;
-  }
+    .count {
+      color: #570101;
+    }
 
-  .score {
-    color: #980404;
-  }
+    .review p {
+      color: darkred;
+    }
 
-  .subtitle,
-  .badge {
-    color: #570101;
-  }
+    .review .who {
+      color: #17433f;
+    }
 
-  .count {
-    color: #570101;
-  }
+    .review {
+      border-top: 1px solid #17433f;
+    }
 
-  .review p {
-    color: darkred;
-  }
+    .review:last-child {
+      border-bottom: 1px solid #17433f;
+    }
+  </style>
 
-  .review .who {
-    color: #17433F;
-  }
-
-  .review {
-    border-top: 1px solid #17433F;
-  }
-
-  .review:last-child {
-    border-bottom: 1px solid #17433F;
-  }
-</style>
-
-<body class="oudong-page">
-  <header id="topofpage">
-    <a href="../index.html"><img src="../assets/image/logo.PNG" alt="logo" /></a>
-    <h1>Tourism and Travel Guide</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#topofpage">Home</a></li>
-      <li><a href="#destination">Desination</a></li>
-      <li><a href="#food&culture">Food & Culture</a></li>
-      <li><a href="#travel_tips">Travel Tips</a></li>
-      <li><a href="contact.html">Contact</a></li>
+  <body class="oudong-page">
+    <header id="topofpage">
+      <a href="../index.html"
+        ><img src="../assets/image/logo.PNG" alt="logo"
+      /></a>
+      <h1>Tourism and Travel Guide</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#topofpage">Home</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#food&culture">Food & Culture</a></li>
+        <li><a href="#travel_tips">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <img
+      class="main-pic"
+      src="https://asiatoursdesk.com/wp-content/uploads/2025/01/Udong-10.jpg"
+      alt="main-pic"
+    />
+    <h1 class="title">Oudong Mountain</h1>
+    <ul class="link">
+      <li><a href="/Components/Angkor.html">Angkor Wat</a></li>
+      |
+      <li><a href="/Components/Kohrong.html">Koh Rong</a></li>
+      |
+      <li><a href="/Components/Royal.html">Royal Palace</a></li>
     </ul>
-  </nav>
-  <img class="main-pic" src="https://asiatoursdesk.com/wp-content/uploads/2025/01/Udong-10.jpg" alt="main-pic">
-  <h1 class="title">Oudong Mountain</h1>
-  <ul class="link">
-    <li><a href="/Components/Angkor.html">Angkor Wat</a></li>|
-    <li><a href="/Components/Kohrong.html">Koh Rong</a></li>|
-    <li><a href="/Components/Royal.html">Royal Palace</a></li>
-  </ul>
-  <div class="article">
-    <p>
-    Rising above the plains of <strong>Kandal Province</strong>, <strong>Oudong Mountain</strong> is one of Cambodia's most significant historical and religious landmarks. Once the seat of the Khmer kings for more than two centuries, the mountain is now home to impressive Buddhist stupas, sacred temples, and monuments that reflect the nation's rich cultural heritage. Visitors can climb the hillside to admire breathtaking panoramic views, experience the peaceful atmosphere, and learn about the important role Oudong has played in Cambodia's history. Whether you are interested in history, spirituality, or scenic landscapes, Oudong Mountain offers a memorable journey into the heart of Cambodia's past.
-    </p>
-  </div>
+    <div class="article">
+      <p>
+        Rising above the plains of <strong>Kandal Province</strong>,
+        <strong>Oudong Mountain</strong> is one of Cambodia's most significant
+        historical and religious landmarks. Once the seat of the Khmer kings for
+        more than two centuries, the mountain is now home to impressive Buddhist
+        stupas, sacred temples, and monuments that reflect the nation's rich
+        cultural heritage. Visitors can climb the hillside to admire
+        breathtaking panoramic views, experience the peaceful atmosphere, and
+        learn about the important role Oudong has played in Cambodia's history.
+        Whether you are interested in history, spirituality, or scenic
+        landscapes, Oudong Mountain offers a memorable journey into the heart of
+        Cambodia's past.
+      </p>
+    </div>
 
-  <!-- Destination -->
-  <div class="destination" id="destination">
-    <h2 class="des-title">Destination</h2>
+    <!-- Destination -->
+    <div class="destination" id="destination">
+      <h2 class="des-title">Destination</h2>
 
-    <iframe class="google-map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.2100130133676!2d104.76471807510379!3d11.798286788419542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310eb10042b1d219%3A0x59c1009ccdf87243!2sOudong%20mountain%20resort!5e1!3m2!1sen!2skh!4v1783152425374!5m2!1sen!2skh"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <iframe
+        class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.2100130133676!2d104.76471807510379!3d11.798286788419542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310eb10042b1d219%3A0x59c1009ccdf87243!2sOudong%20mountain%20resort!5e1!3m2!1sen!2skh!4v1783152425374!5m2!1sen!2skh"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
 
-    <a class="destination-link" href="https://maps.app.goo.gl/22ZqFU9tBcUXQtnU7" target="_blank">Take me there</a>
-  </div>
-  <hr>
+      <a
+        class="destination-link"
+        href="https://maps.app.goo.gl/22ZqFU9tBcUXQtnU7"
+        target="_blank"
+        >Take me there</a
+      >
+    </div>
+    <hr />
 
-  <!-- Food and Culture -->
-  <article>
-    <div class="container" id="food&culture">
-      <div class="wrapper">
-        <h1 class="heading">Food and Culture</h1>
-        <div class="article-wrapper">
-          <div class="food-wrapper">
-            <h2>Food</h2>
-            <div class="food">
-              <img src="../assets/image/grilled-picy-honeycomb.jpg" alt="Food">
-              <div class="food-article">
-                <h3>Grilled Spicy Honeycomb</h3>
-                <p>A unique local delicacy found around Oudong Mountain, grilled spicy honeycomb is prized for its rich, chewy texture and bold smoky flavor. Seasoned with a blend of Khmer spices and grilled over charcoal, it offers a delicious balance of savory, spicy, and slightly sweet notes. Popular among adventurous food lovers, this specialty provides visitors with an authentic taste of Cambodia's traditional street food culture.</p>
-                <a href="https://web.facebook.com/discoverasean10/posts/street-foods-and-snacks-at-oudong-mountain-cambodia-ancient-town-of-the-post-ang/2007487252769772/?_rdc=1&_rdr" target="_blank">Explore More</a>
+    <!-- Food and Culture -->
+    <article>
+      <div class="container" id="food&culture">
+        <div class="wrapper">
+          <h1 class="heading">Food and Culture</h1>
+          <div class="article-wrapper">
+            <div class="food-wrapper">
+              <h2>Food</h2>
+              <div class="food">
+                <img
+                  src="../assets/image/grilled-picy-honeycomb.jpg"
+                  alt="Food"
+                />
+                <div class="food-article">
+                  <h3>Grilled Spicy Honeycomb</h3>
+                  <p>
+                    A unique local delicacy found around Oudong Mountain,
+                    grilled spicy honeycomb is prized for its rich, chewy
+                    texture and bold smoky flavor. Seasoned with a blend of
+                    Khmer spices and grilled over charcoal, it offers a
+                    delicious balance of savory, spicy, and slightly sweet
+                    notes. Popular among adventurous food lovers, this specialty
+                    provides visitors with an authentic taste of Cambodia's
+                    traditional street food culture.
+                  </p>
+                  <a
+                    href="https://web.facebook.com/discoverasean10/posts/street-foods-and-snacks-at-oudong-mountain-cambodia-ancient-town-of-the-post-ang/2007487252769772/?_rdc=1&_rdr"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
+              </div>
+              <div class="food">
+                <img src="../assets/image/grill-crab.jpg" alt="Food" />
+                <div class="food-article">
+                  <h3>Grilled Crab Shell with Seafood Sauce</h3>
+                  <p>
+                    A popular street food enjoyed by visitors to Oudong
+                    Mountain, grilled crab shell with seafood sauce combines the
+                    rich flavor of crab with a savory, creamy filling served
+                    inside the shell. Grilled until golden and aromatic, the
+                    dish is topped with a flavorful seafood sauce that adds a
+                    delicious blend of sweetness, saltiness, and spice. Its
+                    unique presentation and satisfying taste make it a favorite
+                    snack for travelers exploring the area.
+                  </p>
+                  <a
+                    href="https://web.facebook.com/discoverasean10/posts/street-foods-and-snacks-at-oudong-mountain-cambodia-ancient-town-of-the-post-ang/2007487252769772/?_rdc=1&_rdr"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="food">
-              <img
-                src="../assets/image/grill-crab.jpg"
-                alt="Food">
-              <div class="food-article">
-                <h3>Grilled Crab Shell with Seafood Sauce</h3>
-                <p>A popular street food enjoyed by visitors to Oudong Mountain, grilled crab shell with seafood sauce combines the rich flavor of crab with a savory, creamy filling served inside the shell. Grilled until golden and aromatic, the dish is topped with a flavorful seafood sauce that adds a delicious blend of sweetness, saltiness, and spice. Its unique presentation and satisfying taste make it a favorite snack for travelers exploring the area.</p>
-                <a href="https://web.facebook.com/discoverasean10/posts/street-foods-and-snacks-at-oudong-mountain-cambodia-ancient-town-of-the-post-ang/2007487252769772/?_rdc=1&_rdr" target="_blank">Explore More</a>
+            <div class="culture-wrapper">
+              <h2>Culture</h2>
+              <div class="culture">
+                <img src="../assets/image/oudong-pray.jpg" alt="Food" />
+                <div class="culture-article">
+                  <h3>Buddhist Pilgrimage</h3>
+                  <p>
+                    Oudong Mountain is one of Cambodia's most important Buddhist
+                    pilgrimage sites. Throughout the year, devotees visit the
+                    mountain to pray, make offerings, and seek blessings at its
+                    sacred temples and stupas. The peaceful atmosphere makes it
+                    a meaningful destination for both worship and reflection.
+                  </p>
+                  <a
+                    href="https://www.tripadvisor.com/AttractionProductReview-g293940-d25382848-Oudong_Mountain_History_and_Pagoda_Tour-Phnom_Penh.html"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="culture-wrapper">
-            <h2>Culture</h2>
-            <div class="culture">
-              <img src="../assets/image/oudong-pray.jpg" alt="Food">
-              <div class="culture-article">
-                <h3>Buddhist Pilgrimage</h3>
-                <p>Oudong Mountain is one of Cambodia's most important Buddhist pilgrimage sites. Throughout the year, devotees visit the mountain to pray, make offerings, and seek blessings at its sacred temples and stupas. The peaceful atmosphere makes it a meaningful destination for both worship and reflection.</p>
-                <a href="https://www.tripadvisor.com/AttractionProductReview-g293940-d25382848-Oudong_Mountain_History_and_Pagoda_Tour-Phnom_Penh.html" target="_blank">Explore More</a>
-              </div>
-            </div>
-            <div class="culture">
-              <img src="../assets/image/oudong-monks.jpg" alt="Food">
-              <div class="culture-article">
-                <h3>Monastic Life</h3>
-                <p>Visitors often encounter Buddhist monks walking through the temple grounds or leading prayers. Their presence reflects the important role of Buddhism in Cambodian daily life and adds to the mountain's tranquil and spiritual environment.</p>
-                <a href="https://www.tripadvisor.com/AttractionProductReview-g293940-d25382848-Oudong_Mountain_History_and_Pagoda_Tour-Phnom_Penh.html" target="_blank">Explore More</a>
+              <div class="culture">
+                <img src="../assets/image/oudong-monks.jpg" alt="Food" />
+                <div class="culture-article">
+                  <h3>Monastic Life</h3>
+                  <p>
+                    Visitors often encounter Buddhist monks walking through the
+                    temple grounds or leading prayers. Their presence reflects
+                    the important role of Buddhism in Cambodian daily life and
+                    adds to the mountain's tranquil and spiritual environment.
+                  </p>
+                  <a
+                    href="https://www.tripadvisor.com/AttractionProductReview-g293940-d25382848-Oudong_Mountain_History_and_Pagoda_Tour-Phnom_Penh.html"
+                    target="_blank"
+                    >Explore More</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </article>
+
+    <!-- Travel tips -->
+    <div class="wrap" id="travel_tips">
+      <h1 class="wrap-h1">Oudong — General Day Flow</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Time of Day</th>
+            <th>What to Do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time">Early Morning</td>
+            <td>
+              Leave Phnom Penh early to enjoy the cooler weather and quieter
+              atmosphere. The drive to Oudong takes about an hour, making it an
+              easy day trip.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Morning</td>
+            <td>
+              Begin climbing the mountain's staircase, stopping at temples,
+              Buddha statues, and ancient royal stupas along the way. Take your
+              time to appreciate the peaceful surroundings and panoramic
+              countryside views.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Mid-Morning</td>
+            <td>
+              Reach the summit and visit the sacred shrines and monuments. Learn
+              about Oudong's role as Cambodia's former royal capital and observe
+              local worshippers making offerings.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Late Morning</td>
+            <td>
+              Explore the viewpoints around the mountain and capture photos of
+              the vast rice fields and villages stretching across the landscape.
+              The cool breeze makes this one of the most enjoyable times to be
+              at the summit.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Lunch</td>
+            <td>
+              Head to the local food stalls at the foot of the mountain to enjoy
+              authentic Cambodian dishes. Be sure to try regional favorites such
+              as grilled spicy honeycomb, grilled crab shell with flavorful
+              filling, or freshly grilled corn.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Early Afternoon</td>
+            <td>
+              Browse the small souvenir and snack stalls run by local families.
+              Sample traditional Khmer sweets and refreshing drinks while
+              experiencing the warm hospitality of the community.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Mid-Afternoon</td>
+            <td>
+              Visit nearby cultural or religious sites, or simply relax in the
+              peaceful environment before beginning your return journey. The
+              slower pace offers a chance to reflect on the mountain's history
+              and spiritual significance.
+            </td>
+          </tr>
+          <tr>
+            <td class="time">Late Afternoon</td>
+            <td>
+              Return to Phnom Penh, enjoying views of Cambodia's countryside
+              along the way. If time allows, stop at a local market for fresh
+              fruits or handmade souvenirs before ending your trip.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </article>
-
-  <!-- Travel tips -->
-  <div class="wrap" id="travel_tips">
-    <h1 class="wrap-h1">Oudong — General Day Flow</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Time of Day</th>
-          <th>What to Do</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr> <td class="time">Early Morning</td>
-          <td>Leave Phnom Penh early to enjoy the cooler weather and quieter atmosphere. The drive to Oudong takes about an hour, making it an easy day trip.</td>
-        </tr>
-        <tr>
-          <td class="time">Morning</td>
-          <td>Begin climbing the mountain's staircase, stopping at temples, Buddha statues, and ancient royal stupas along the way. Take your time to appreciate the peaceful surroundings and panoramic countryside views.</td>
-        </tr>
-        <tr>
-          <td class="time">Mid-Morning</td>
-          <td>Reach the summit and visit the sacred shrines and monuments. Learn about Oudong's role as Cambodia's former royal capital and observe local worshippers making offerings.</td>
-        </tr>
-        <tr>
-          <td class="time">Late Morning</td>
-          <td>Explore the viewpoints around the mountain and capture photos of the vast rice fields and villages stretching across the landscape. The cool breeze makes this one of the most enjoyable times to be at the summit.</td>
-        </tr>
-        <tr>
-          <td class="time">Lunch</td>
-          <td>Head to the local food stalls at the foot of the mountain to enjoy authentic Cambodian dishes. Be sure to try regional favorites such as grilled spicy honeycomb, grilled crab shell with flavorful filling, or freshly grilled corn.</td>
-        </tr>
-        <tr>
-          <td class="time">Early Afternoon</td>
-          <td>Browse the small souvenir and snack stalls run by local families. Sample traditional Khmer sweets and refreshing drinks while experiencing the warm hospitality of the community.</td>
-        </tr>
-        <tr>
-          <td class="time">Mid-Afternoon</td>
-          <td>Visit nearby cultural or religious sites, or simply relax in the peaceful environment before beginning your return journey. The slower pace offers a chance to reflect on the mountain's history and spiritual significance.</td>
-        </tr>
-        <tr>
-          <td class="time">Late Afternoon</td>
-          <td>Return to Phnom Penh, enjoying views of Cambodia's countryside along the way. If time allows, stop at a local market for fresh fruits or handmade souvenirs before ending your trip.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
-</body>
-
+    <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
+  </body>
 </html>
