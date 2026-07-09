@@ -7,6 +7,7 @@
 
 ![Static Badge](https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=html5&labelColor=white)
 ![Static Badge](https://img.shields.io/badge/CSS-purple?style=for-the-badge&logo=css&logoColor=purple&labelColor=white)
+![Static Badge](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=yellow&labelColor=black)
 ![Static Badge](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
 </div>
@@ -21,28 +22,28 @@ The project demonstrates semantic **HTML5** structure, external **CSS** styling,
 
 ### Pages
 
-- [ ] Home — Introduction to Cambodia with highlights of popular attractions
-- [ ] Destinations — Famous places (Angkor Wat, Oudong Mountain, Phnom Penh, Koh Rong)
-- [ ] Food & Culture — Traditional Cambodian foods and cultural activities
-- [ ] Travel Tips — Transportation, costs, and recommended travel seasons
-- [ ] Contact — Feedback/question form
+- [x] Home — Introduction to Cambodia with highlights of popular attractions
+- [x] Destinations — Famous places (Angkor Wat, Oudong Mountain, Phnom Penh, Koh Rong)
+- [x] Food & Culture — Traditional Cambodian foods and cultural activities
+- [x] Travel Tips — Transportation, costs, and recommended travel seasons
+- [x] Contact — Feedback/question form
 
 ### CSS Requirements
 
-- [ ] External CSS stylesheet linked to all pages
-- [ ] At least one `@import` (e.g. Google Fonts)
+- [x] External CSS stylesheet linked to all pages
+- [x] At least one `@import` (e.g. Google Fonts)
 - [ ] Consistent typography across all pages
-- [ ] Colors, backgrounds, and styled borders/buttons
-- [ ] CSS box model (margin, padding, border)
-- [ ] Flexbox and/or CSS Grid for layout
-- [ ] Link states (hover, visited, active)
-- [ ] Styled table and form elements
+- [x] Colors, backgrounds, and styled borders/buttons
+- [x] CSS box model (margin, padding, border)
+- [x] Flexbox and/or CSS Grid for layout
+- [x] Link states (hover, visited, active) (only hover)
+- [x] Styled table and form elements
 
 ### Responsive Design
 
-- [ ] At least two media queries (mobile, tablet, desktop)
-- [ ] Responsive navigation, images, and layout
-- [ ] Relative units (`%`, `em`, `rem`, `vw/vh`)
+- [x] At least two media queries (mobile, tablet, desktop)
+- [x] Responsive navigation, images, and layout
+- [x] Relative units (`%`, `em`, `rem`, `vw/vh`)
 
 ### Extra Credit (Optional)
 

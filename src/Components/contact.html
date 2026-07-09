@@ -69,6 +69,29 @@
     </form>
   </div>
   <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
+  <script>
+      const submit = document.querySelector(".submit");
+      const popup = document.querySelector('.pop-up');
+      const form = document.getElementById('form');
+
+      submit.addEventListener('click', () => {
+        const name = document.getElementById("fullname").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        if (name === ""  email === ""  message === "") {
+          alert("Please fill in the form first !!")
+        } else if (!email.includes('@') || !email.includes('.')) {
+          alert("Please input a proper email");
+        } else {
+          event.preventDefault();
+          popup.style.display = 'flex';
+          setTimeout(() => {
+            popup.style.display = 'none';
+          }, 3000);
+          form.reset();
+        };
+      });
+  </script>
 </body>
 
 </html>
