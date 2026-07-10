@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .title-header{
   font-size: 40px;
-  font-family: "Playfair Display", "Cinzel", serif;
+  font-family:  "Cinzel", "Playfair Display", "Domaine Display Narrow", serif;
 }
 .title-text{
   max-width: 40vw;

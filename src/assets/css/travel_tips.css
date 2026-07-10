@@ -25,6 +25,7 @@ header h1{
   color: #170c79;
 }
 .title-header {
+  font-family: var(--heading-font);
   font-size: 40px;
 }
 .title-text {
@@ -156,9 +157,6 @@ header h1{
     overflow-x: auto;
     width: 100%;
   }
-  .title-wrapper {
-    padding: 20px;
-  }
 
   header h1{
     font-size: 15px;
@@ -171,5 +169,13 @@ header h1{
   }
   nav li a{
     font-size: 10px;
+  }
+    .title-header{
+    font-size: 24px;
+  }
+
+  .title-wrapper{
+    padding: 15px 20px;
+    gap: 10px;
   }
 }
