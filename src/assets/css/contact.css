@@ -36,6 +36,33 @@ main p{
   line-height: 20px;
 }
 
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pop-up .message {
+  background-color: white;
+  color: black;
+  padding: 25px 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-family: "Noto Sans", "lato", sans-serif;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 85%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
 .card-wrapper{
   display: flex;
   flex-direction: row;
@@ -67,7 +94,7 @@ main p{
 /*Make form bigger for big screen device*/
 .form-wrapper {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 form{
   display: flex;
@@ -78,7 +105,8 @@ form{
   border: 2px solid #F3E4C9;
   border-radius: 10px;
   height: max-content;
-  gap: 20px;var(--body-font)
+  gap: 20px;
+  font-family: var(--body-font);
   padding-top: 40px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 800;
@@ -144,42 +172,6 @@ button{
     max-width: 90vw;
   }
 
-.pop-up {
-  /* 1. Changed to 'fixed' so it stays centered even if the user scrolls */
-  position: fixed;
-  top: 0;
-  left: 0;
-  
-  /* 2. Made it exactly 100% of the screen (120vh causes broken scrolling) */
-  width: 100%;
-  height: 100%;
-  
-  /* 3. High z-index forces it to sit safely on top of all headers/inputs */
-  z-index: 9999; 
-  
-  display: none; /* Changed to 'flex' by your JS when active */
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.pop-up .message {
-  background-color: white;
-  color: black;
-  padding: 25px 30px;
-  font-size: 20px;
-  border-radius: 20px;
-  font-family: "Noto Sans", "lato", sans-serif;
-  text-align: center;
-  
-  /* 4. Swapped the harsh white shadow for a sleek, realistic dark shadow */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  
-  /* 5. MOBILE RESPONSIVENESS MAGIC */
-  width: 85%;         /* Keeps a clean safety margin on small smartphone screens */
-  max-width: 420px;   /* Prevents the modal from stretching awkwardly wide on desktops */
-  box-sizing: border-box; /* Ensures padding doesn't break the width calculations */
-}
   .card-wrapper{
     flex-direction: column;
     align-items: center;

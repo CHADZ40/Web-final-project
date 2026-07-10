@@ -16,13 +16,16 @@
   </header>
   <nav>
     <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="./destination.html">Destination</a></li>
-      <li><a href="./guide.html">Food & Culture</a></li>
-      <li><a href="./guide2.html">Travel Tips</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/Components/destination.html">Destination</a></li>
+      <li><a href="/Components/guide.html">Food & Culture</a></li>
+      <li><a href="/Components/guide2.html">Travel Tips</a></li>
       <li><a href="#topofpage">Contact</a></li>
     </ul>
   </nav>
+  <div class="pop-up">
+    <p class="message">Your form has been submitted.</p>
+  </div>
   <main>
     <h1>Contact Us</h1>
     <p>Have a question about planning your trip, or feedback on this guide? Send us a message using the form below and
@@ -31,7 +34,7 @@
   </main>
   <div class="card-wrapper">
     <div class="card">
-      <div class = "card-title">
+      <div class="card-title">
         <img src="../assets/image/mail.svg"></img>
         <h2>Email</h2>
       </div>
@@ -39,14 +42,14 @@
     </div>
 
     <div class="card">
-      <div class = "card-title">
+      <div class="card-title">
         <img src="../assets/image/office.svg"></img>
         <h2>Office</h2>
       </div>
       <p>D2 Lecturer Hall, American University of Phnom Penh</p>
     </div>
     <div class="card">
-      <div class = "card-title">
+      <div class="card-title">
         <img src="../assets/image/clock.svg"></img>
         <h2>Hours</h2>
       </div>
@@ -54,7 +57,7 @@
     </div>
   </div>
   <div class="form-wrapper">
-    <form action="submit" method="POST">
+    <form action="submit" method="POST" id="form">
       <label for="fullname">Full name</label>
       <input type="text" id="fullname" name="fullname" placeholder="full name" required>
 
@@ -65,32 +68,32 @@
       <textarea name="message" id="message" placeholder="Your message"></textarea>
 
       <button type="reset" class="reset">Reset</button>
-      <button type="submit">Submit</button>
+      <button class="submit">Submit</button>
     </form>
   </div>
   <footer>Copyrigts &copy; 2026, DerLeng Site</footer>
   <script>
-      const submit = document.querySelector(".submit");
-      const popup = document.querySelector('.pop-up');
-      const form = document.getElementById('form');
+    const submit = document.querySelector(".submit");
+    const popup = document.querySelector('.pop-up');
+    const form = document.getElementById('form');
 
-      submit.addEventListener('click', () => {
-        const name = document.getElementById("fullname").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-        if (name === ""  email === ""  message === "") {
-          alert("Please fill in the form first !!")
-        } else if (!email.includes('@') || !email.includes('.')) {
-          alert("Please input a proper email");
-        } else {
-          event.preventDefault();
-          popup.style.display = 'flex';
-          setTimeout(() => {
-            popup.style.display = 'none';
-          }, 3000);
-          form.reset();
-        };
-      });
+    submit.addEventListener('click', (event) => {
+      event.preventDefault();
+      const name = document.getElementById("fullname").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in the form first !!");
+      } else if (!email.includes('@') || !email.includes('.')) {
+        alert("Please input a proper email");
+      } else {
+        popup.style.display = 'flex';
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 3000);
+        form.reset();
+      };
+    });
   </script>
 </body>
 
